@@ -1,157 +1,99 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
+body {
+    background-color: #f0f0f0;
+  }
 
-h1{
-    text-align: right;
-    font-size: 170%;
-    }
+  body.dark-mode {
+    background-color: #333;
     
-    header{
-    background-color: lightsalmon;
-    display: flex;
-    text-align: center;
-    
-    }
-    
-    #dos{
-        border-radius: 55%;
-        width: 250px;
-        height: 250px;
-        max-width: 400px; 
-        display: flex;
-        justify-content: start;
-        
-    }
-        
- footer{
-    text-align: center;
- }
-
     .tres {
-    background-color: lightsalmon;
+        background-color: rgb(214, 121, 237);
+    }
+  
+  }
+  
+
+header {
     display: flex;
-    justify-content: right;
+    justify-content: space-between; /* Esto separará el logo y el navbar */
+    align-items: center;
+    background-color: #333; /* Color de fondo del header */
+    padding: 10px;
+}
+
+/* Estilos para el logo */
+.logo {
+    margin-right: 20px; /* Espacio entre el logo y el navbar */
+}
+
+.uno {
+    width: 100px;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff; /* Color del texto en el navbar */
+    margin-left: 10px; /* Espacio entre los enlaces en el navbar */
+    text-decoration: none; /* Quitamos la decoración de subrayado */
+}
+
+/* Colores del resto del contenido */
+main, footer {
+     /* Color de fondo del contenido principal y el footer */
+    padding: 10px;
+}
+
+/* Estilos para colocar el párrafo al lado derecho de la imagen */
+.once {
+    display: flex;
+    align-items: flex-start; /* Alineamos la imagen y el párrafo en la parte superior */
+    
+}
+
+.imagenCambiante{
+    width: 190px; /* Puedes ajustar el ancho según sea necesario */
+    margin-right: 30px;
+    border-radius: 300px;
+}
+
+
+/* Estilos para el contenedor del párrafo y el enlace */
+.contenedor-parrafo-enlace {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se ajusten en una nueva línea si no caben horizontalmente */
+    align-items: center;
+}
+
+.tres {
+    flex: 1; /* El párrafo ocupará todo el espacio disponible */
+}
+
+.ocho {
+    margin-top: 10px; /* Espacio entre el enlace y el párrafo */
+    background-color: rgb(214, 121, 237);
+}
+
+.siete {
     text-align: center;
-    
-    
-    }
-    
-    .cuatro{
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        background-color: lightsalmon;
-        
-    }
-
-    .once{
-        display: flex;
-        justify-content: left;
-    }
-
-    .feid{
-       display: flex;
-       justify-content: flex-start;
-    }
-    
-    h2{
-        text-align: center;
-        font-size: 165%;
-    }
-    
-    .siete{
-  display: flex;
-  align-items: flex-end;
-
-    }
-
-.ocho{
-    background-color: lightpink;
-    font-size: 160%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 3%;
-    
+    justify-content: space-around;
 }
 
-.verde{
-    background-color: lightpink;
+.feid {
+
+    text-align: start;
 }
 
-.mora{
- display: flex;
- justify-content: flex-start;
-}
-
-.rosa{
-    background-color: lightpink;
-
-}
-
-.azul{
-    background-color: lightskyblue;
+.fresa {
+    background-color: rgb(214, 121, 237);
 }
 
 
-    footer{
-        background-color: lightpink;
-    }
-    /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-    *  cuyos valores asigna por defecto el navegador.
-    */
-    
-    /* Reset */
-    * {
-        box-sizing: border-box;
-        margin: auto;
-        border: 5%;
-        padding: 1%;
-        /* Para que el scrolleo en la one page sea suave */
-        scroll-behavior: smooth;
-        display: flex;
-        
-    
-    }
-    
-    /* Para quitar los puntos a los items de listas */
-    ul {
-        list-style: none;
-    }
-    
-    /* Para que los enlaces hereden el color de texto y no tengan subrayado */
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-    *  el margin: auto; para tenerlo centrado fácilmente ;)
-    */
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
-    
-    /* Recomendaciones! 
-    *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-    *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-    *
-    *  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-    *    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-    *
-    *  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-    *    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-    *
-    *  - Usen mucho las herramientas para desarrolladores del navegador para ir
-    *    probando el CSS que escriben, resolver dudas y problemas.
-    *
-    *  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-    *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-    *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-    */
-    
+
+footer{
+    text-align: center;
+    background-color: rgb(214, 121, 237);
+}
